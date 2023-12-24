@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/jkalmar-io/merrychristmasfromhannahsboyfriend%3E/static/css/main.c089390a.css",
+    "main.js": "/jkalmar-io/merrychristmasfromhannahsboyfriend%3E/static/js/main.24a1e2d2.js",
+    "static/js/787.0ce1ffe3.chunk.js": "/jkalmar-io/merrychristmasfromhannahsboyfriend%3E/static/js/787.0ce1ffe3.chunk.js",
+    "static/media/santajoe.png": "/jkalmar-io/merrychristmasfromhannahsboyfriend%3E/static/media/santajoe.e66be292b5c778ea86cb.png",
+    "index.html": "/jkalmar-io/merrychristmasfromhannahsboyfriend%3E/index.html",
+    "main.c089390a.css.map": "/jkalmar-io/merrychristmasfromhannahsboyfriend%3E/static/css/main.c089390a.css.map",
+    "main.24a1e2d2.js.map": "/jkalmar-io/merrychristmasfromhannahsboyfriend%3E/static/js/main.24a1e2d2.js.map",
+    "787.0ce1ffe3.chunk.js.map": "/jkalmar-io/merrychristmasfromhannahsboyfriend%3E/static/js/787.0ce1ffe3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c089390a.css",
+    "static/js/main.24a1e2d2.js"
+  ]
+}
