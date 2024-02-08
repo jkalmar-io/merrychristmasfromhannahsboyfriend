@@ -1,0 +1,118 @@
+h1.animated-title {
+  -webkit-background-clip: text;
+  color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center */
+  align-items: center; /* Horizontally center */
+  /* Initialize the background to fully transparent */
+  background-image: linear-gradient(to right, transparent 0%, transparent 100%);
+  padding-top: 40%;
+  text-align: center;
+  font-size: 2.3em;
+  z-index: 1000;
+  
+}
+
+.animated-title.start-animation {
+  animation: bg 0.5s ease forwards;
+}
+
+
+
+@keyframes bg {
+  0% {
+    background-image: linear-gradient(to right, transparent 0%, transparent 100%);
+  }
+  10% {
+    background-image: linear-gradient(to right, white 10%, transparent 20%, transparent 100%);
+  }
+  20% {
+    background-image: linear-gradient(to right, white 20%, transparent 30%, transparent 100%);
+  }
+  30% {
+    background-image: linear-gradient(to right, white 30%, transparent 40%, transparent 100%);
+  }
+  40% {
+    background-image: linear-gradient(to right, white 40%, transparent 50%, transparent 100%);
+  }
+  50% {
+    background-image: linear-gradient(to right, white 50%, transparent 60%, transparent 100%);
+  }
+  60% {
+    background-image: linear-gradient(to right, white 60%, transparent 70%, transparent 100%);
+  }
+  70% {
+    background-image: linear-gradient(to right, white 70%, transparent 80%, transparent 100%);
+  }
+  80% {
+    background-image: linear-gradient(to right, white 80%, transparent 90%, transparent 100%);
+  }
+  90% {
+    background-image: linear-gradient(to right, white 90%, transparent 100%);
+  }
+  100% {
+    background-image: linear-gradient(to right, white 100%, white 100%);
+  }
+}
+
+.christmas-section{
+z-index: 1000;
+}
+
+
+.border-imagens {
+  position: fixed;
+  width: 100vw; /* Adjust based on your image size */
+  height: auto; /* Adjust based on your image size */
+  z-index: 99; /* Ensure it's above other content */
+  filter: drop-shadow(0px 2px 4px #222222);
+}
+
+.border-imageew {
+  position: fixed;
+  width: auto; /* Adjust based on your image size */
+  height: 50vh; /* Adjust based on your image size */
+  z-index: 99; /* Ensure it's above other content */
+  filter: drop-shadow(0px 2px 4px #222222);
+}
+
+
+.top {
+  top: 0;
+  left: 0;
+}
+
+.top-rightb {
+  top: 0;
+  right: 0;
+}
+
+.top-leftb {
+  top: 0;
+  left: 0;
+}
+
+.bottom{
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-rightb {
+  bottom: 0;
+  right: 0;
+}
+
+.bottom-leftb{
+  bottom: 0;
+  left: 0;
+}
+
+.canvas{
+  position: fixed;
+  z-index: 100;
+}
+
+.animated-title{
+  z-index: 1001;
+}

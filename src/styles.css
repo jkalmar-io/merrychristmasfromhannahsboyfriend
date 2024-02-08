@@ -1,0 +1,104 @@
+/* font imports */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Ubuntu:wght@500;700&display=swap');
+
+
+
+
+
+
+/* styles.css */
+.welcome-section, .help-section, .christmas-section, .gift-section {
+    /* Common styles for sections */
+    padding: 1vh;
+    margin: 1vh;
+    border-radius: 1vh;
+  }
+  
+  /* Specific styles for each section */
+  .welcome-section { background-color: lightblue; }
+  .help-section { background-color: lightyellow; }
+  .christmas-section { background-image: linear-gradient(to right bottom, #aa0c0c, #96070b, #810309, #6e0105, #5b0000);}
+  .gift-section { background-color: lightgreen; }
+
+  /* styles.css */
+.fullscreen-section {
+  min-height: 100vh; /* 100% of the viewport height */
+  width: 100%; /* Full width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Add more styles as needed */
+}
+
+.welcome-section, .help-section, .christmas-section, .gift-section {
+height: 96vh; /* 100% of the viewport height */
+width: 92vw;
+scroll-snap-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+.app {
+  /* Set up the container as a scroll-snap container */
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh; /* Full viewport height */
+}
+
+.christmas-section {
+  color: white;
+}
+
+.christmas-section h1 {
+  font-family: 'DM Serif Display', serif;
+}
+
+.bg-transparent {
+	background-color: transparent;
+}
+
+.w-full {
+  width: 50%;
+}
+
+.h-screen {
+  min-height: 40;
+  height: 60%;
+  max-height: 60%;
+}
+
+.center {
+  margin: auto;
+}
+
+h2.animated-title {
+  -webkit-background-clip: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center */
+  align-items: center; /* Horizontally center */
+  /* Initialize the background to fully transparent */
+  padding-top: 40%;
+  text-align: center;
+  font-size: 2.3em;
+  z-index: 1000;
+  width: 50%;
+  margin: auto;
+  
+}
+
+p.animated-title {
+  -webkit-background-clip: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center */
+  align-items: center; /* Horizontally center */
+  /* Initialize the background to fully transparent */
+  text-align: center;
+  z-index: 1000;
+  width: 50%;
+  margin: auto;
+  padding-top: 20%
+  
+}

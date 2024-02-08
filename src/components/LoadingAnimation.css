@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* src/components/LoadingAnimation.css */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  position: relative;
+  overflow: hidden; /* Prevent snowflakes from scrolling the page */
+}
+
+.snowflake {
+  position: absolute;
+  top: -10%; /* Start just above the container */
+  color: white;
+  user-select: none; /* Prevent text selection */
+  font-size: 1em; /* Adjust size as needed */
+  opacity: 0.5; /* Snowflakes are slightly transparent */
+  animation-name: fall, spin; /* Apply both animations */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  /* Separate each animation duration and delay if needed with commas */
+  animation-duration: 1s, 1s; /* Example: adjust as needed */
+  animation-delay: 0s, 0s; /* No delay for both animations */
+}
+
+/* Keyframes for falling */
+@keyframes fall {
+  to { top: 100vh; } /* Fall to the bottom of the viewport */
+}
+
+/* Keyframes for spinning */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+
+.loading-spinner{
+  position: absolute;
+  z-index: 4;
+}
+
+
+.loading-spinner img {
+  animation: spin 3s ease-out infinite;
+  transform-origin: center; /* Ensures the rotation is around the image center */
+  max-width: 30vw;
+  max-height: 30vh;
+  width: auto;
+  height: auto;
+  z-index: 4; /* Keeps the image above the snowflakes */
+  position: relative; /* This makes z-index take effect */
+}
+
+
+
+
+
+/* General mobile devices */
+@media only screen and (max-width: 414px) {
+  .loading-spinner img {
+    width: 30vw; /* Adjust to 50% of viewport width on mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media only screen 
+  and (device-width: 375px) 
+  and (device-height: 812px)
+  and (-webkit-device-pixel-ratio: 3),
+  only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 414px)
+  and (min-device-height: 780px) 
+  and (max-device-height: 896px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    /* Your CSS goes here */
+    .loading-spinner img {
+      min-width: 40vw;
+      height: auto;
+    }
+  }
